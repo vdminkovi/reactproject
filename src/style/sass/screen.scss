@@ -1,0 +1,133 @@
+@import "compass/reset";
+@import "variebles";
+
+body {
+  font-family: Helvetice, Ariel, sans-serif;
+  line-height: 1.2;
+  color: $font-color;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+h1 {
+  font-size: $h1font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:$font-color-blue;
+  padding:  50px 0 20px 0;
+}
+h2{
+  font-size: $h2font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-bottom: 1px dotted $font-white;
+}
+h3 {
+  font-size: $h3font-size;
+  font-weight: 400;
+  border-bottom: 1px dotted  $font-color;
+  padding-bottom:10px;
+  color:$font-color-blue;
+}
+i {
+  font-style: italic;
+}
+small {
+  font-size:12px;
+}
+header {
+  padding:0 0 40px 0;
+  border-bottom: 1px solid $font-color-yellow;
+}
+.App {
+  background-image:url('../Images/newspaper.png');
+  background-repeat:no-repeat;
+  background-position: top right;
+  overflow: hidden;
+}
+.FlexBlock {
+  display: flex;
+  justify-content: center;
+}
+.Container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: $bgrcolor;
+  height:100vh;
+  overflow: hidden;
+}
+.NewsContainer {
+  padding-top:40px;
+  overflow: hidden;
+}
+.Home{
+  padding: 0 5%;
+}
+.Home {
+  line-height: 1.7;
+}
+.NewsTabs{
+  text-align: left;
+  float:left;
+  width:50%;
+
+}
+.News {
+  padding: 10px;
+}
+.News:hover {
+  cursor: pointer;
+  background-color:$bgrcolorhover;
+}
+.NewsSum {
+  background-color: $bgr-newssum;
+  color:$font-white;
+  padding: 30px 0;
+  float:left;
+  width:50%;
+  height:100vh;
+  span {
+    line-height: 1.7;
+  }
+}
+.Image {
+  margin: 0 10px;
+}
+a.btn-style {
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 600;
+  color:$font-color-red;
+  border: 2px solid $font-color-red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-sizing: content-box;
+}
+a.btn-style:hover {
+    border: 1px solid $font-color-red;
+      padding: 11px 20px;
+}
+.link-style {
+    display: inline-block;
+    color:$font-white;
+    border-bottom:1px dotted $font-white;
+    margin-top:20px;
+}
+.loading {
+  color:$font-color-yellow;
+  font-size:18px;
+}
+@media (max-width: 560px) {
+  .App {
+    overflow: auto;
+  }
+  .Container {
+    overflow: auto;
+  }
+  .FlexBlock {
+    flex-flow: column;
+  }
+}
