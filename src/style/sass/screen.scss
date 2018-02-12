@@ -1,4 +1,3 @@
-@import "compass/reset";
 @import "variebles";
 
 body {
@@ -71,10 +70,11 @@ header {
   text-align: left;
   float:left;
   width:50%;
-
+  background-color: $bgrcolor2;
+  height: 100vh;
 }
 .News {
-  padding: 10px;
+  padding: 20px 10px;
 }
 .News:hover {
   cursor: pointer;
